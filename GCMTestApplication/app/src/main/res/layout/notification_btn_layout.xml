@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="3">
+
+    <TextView
+        android:id="@+id/left_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:text="ZARA"
+        android:textAllCaps="true"
+        android:textColor="@color/bright_red_text"/>
+
+    <TextView
+        android:id="@+id/middle_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="left"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="LIFESTYLE"
+        android:textAllCaps="true"
+        android:textColor="@color/bright_red_text"/>
+
+
+    <TextView
+        android:id="@+id/last_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="left"
+
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:text="SHOPPER STOP"
+        android:textAllCaps="true"
+        android:textColor="@color/bright_red_text"/>
+
+</LinearLayout>

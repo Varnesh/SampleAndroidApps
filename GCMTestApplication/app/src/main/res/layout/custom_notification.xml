@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2015, Aditya Birla Money Limited
+  ~ Written under contract by Robosoft Technologies Pvt. Ltd.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/notif_top_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp">
+
+        <ImageView android:id="@+id/notif_icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/notif_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom Notification"
+            android:layout_toRightOf="@id/notif_icon"
+            android:layout_marginTop="10dp"
+            style="@style/NotificationTitle"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/notif_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:layout_alignParentRight="true"
+            android:textSize="11sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/notif_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/notif_icon"
+            android:layout_below="@id/notif_timestamp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16sp"
+            android:maxLines="3"
+            android:text="This is normal notification to test. It uses Android NotificationCompat.Builder to construct the notification and call Notification manager API to show the status bar notification"
+            style="@style/NotificationText"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
